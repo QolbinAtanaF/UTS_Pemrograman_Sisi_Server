@@ -1,0 +1,17 @@
+{
+    "name": "Laravel Dev Container",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/var/www/html",
+    "extensions": [
+        "ms-php.php-intellisense",
+        "felixfbecker.php-debug",
+        "bmewburn.vscode-intelephense-client",
+        "xdebug.php-debug",
+        "onecentlin.laravel-blade"
+    ],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+     },
+    "postCreateCommand": "bash /var/www/html/.devcontainer/post-create.sh"
+}
